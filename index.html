@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Italianno&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Glacia crochê</title>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 letra fs-1">Glaucia crochê</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#inicio" class="nav-link">
+                        <i class="bi bi-house-heart-fill me-2"></i>    
+                        Início</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#produtos" class="nav-link">
+                        <i class="bi bi-bag-heart-fill me-2"></i>
+                        Produtos</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#contato" class="nav-link">
+                        <i class="bi bi-chat-left-dots-fill me-2"></i>
+                        Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section id="inicio">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./imagens/carousel/carousel-1.jpeg" class="w-100" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./imagens/carousel/carousel-2.jpeg" class="w-100" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./imagens/carousel/carousel-3.jpeg" class="w-100" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./imagens/img_sobre/Apresentacao.jpeg" class="d-block w-100 rounded apresentacao-img">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2> <span class="text-colorad-0">Sobre Nós</span></h2>
+                            <p class="letras">
+                                O site Glaucia Crochê foi desenvolvido para que os clientes possam ter acesso ao meu trabalho e, por meio disso conseguirem entrar em contato  comigo e encomendar o seu!
+                                Todas as peças e amigurumis são cuidadosamente feitas a mão e com materiais de ótima qualidade.
+                            </p>
+                            <h3> <span class="text-colorad-0">O que fazemos</span></h3>
+                            <p class="letras">
+                                Fazemos encomendas de conjuntos/roupas/amigurumis padrão e personalizado de acordo com o gosto do cliente, abaixo é possível ver quais trabalhos você pode encomendar!.
+                            </p>
+                            <div class="d-flex ">
+                                <ul class="me-5 ">
+                                    <li class="letras">Tapetes</li>
+                                    <li class="letras">Amigurumis</li>
+                                    <li class="letras">Sapatinhos para bebê</li>
+                                    <li class="letras">Bolsas femininas</li>
+                                    <li class="letras">Capas de Almofadas</li>
+                                </ul>
+                                <ul>
+                                    <li class="letras">Barrado de crochê</li>
+                                    <li class="letras">Jogos de cozinha</li>
+                                    <li class="letras">Jogos de banheiro</li>
+                                    <li class="letras">Toalha de mesa</li>
+                                    <li class="letras">Toalha para decoração</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="produtos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center pt-1 pb-5 text-colorad-1">Produtos</h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-croche">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#tapete" class="fw-bold text-start nav-link active letral">Tapete</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#amigurumi" class="fw-bold text-start nav-link letral">Amigurumi</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#conjunto" class="fw-bold text-start nav-link letral">Conjunto</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tapete">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Tapete/Tapete_1.jpeg" alt="Tapete oval vermelho">
+                                        <h5 class="fw-bold mt-2">Tapete oval vermelho</h5>
+                                        <p class="mb-5 letras">
+                                            Tapete oval vermelho com flores e ponto russo 
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Tapete/Tapete_2.jpeg" alt="Tapete retangular">
+                                        <h5 class="fw-bold mt-2">Tapete retangular</h5>
+                                        <p class=" letras">
+                                            Tapete retangular com detalhes em verde
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Tapete/Tapete_3.jpeg" alt="Tapete retangular">
+                                        <h5 class="fw-bold mt-2">Tapete retangular</h5>
+                                        <p class="letras">
+                                            Tapete retangular rosa e vinho
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Tapete/Tapete_4.jpeg" alt="Tapete oval vermelho">
+                                        <h5 class="fw-bold mt-2">Tapete oval vermelho</h5>
+                                        <p class="letras">
+                                            Tapete oval vermelho com flores
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Tapete/Tapete_5.jpeg" alt="Tapete oval cinza">
+                                        <h5 class="fw-bold mt-2">Tapete oval cinza</h5>
+                                        <p class="pb-4 letras">
+                                            Tapete oval cinza e preto com ponto russo 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Tapete/Tapete_6.jpeg" alt="Tapete oval laranja">
+                                        <h5 class="fw-bold mt-2">Tapete oval laranja</h5>
+                                        <p class="letras">
+                                            Tapete oval laranja com flores 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Tapete/Tapete_7.jpeg" alt="Tapete oval amarelo">
+                                        <h5 class="fw-bold mt-2">Tapete oval amarelo</h5>
+                                        <p class="letras">
+                                            Tapete oval amarelo com flores
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Tapete/Tapete_8.jpeg" alt="Tapete oval laranja">
+                                        <h5 class="fw-bold mt-2">Tapete oval laranja</h5>
+                                        <p class="letras">
+                                            Tapete oval laranja com detalhes em cru
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Tapete/Tapete_9.jpeg" alt="Tapete Minnie">
+                                        <h5 class="fw-bold mt-2">Tapete Minnie</h5>
+                                        <p class="letras">
+                                            Tapete redondo Minnie
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Tapete/Tapete_10.jpeg" alt="Passadeira florido">
+                                        <h5 class="fw-bold mt-2">Passadeira florida</h5>
+                                        <p class="letras">
+                                            Passadeira rosa com flores
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Tapete/Tapete_11.jpeg" alt="Tapete oval rosa">
+                                        <h5 class="fw-bold mt-2">Tapete oval rosa</h5>
+                                        <p class="letras">
+                                            Tapete oval rosa com flores
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Tapete/Tapete_12.jpeg" alt="Tapete meia lua">
+                                        <h5 class="fw-bold mt-2">Tapete meia lua</h5>
+                                        <p class="letras">
+                                            Tapete meia lua colorido com flores
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="amigurumi">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Amigurumi/Amigurumi_1.jpeg" alt="Casal ursinho">
+                                        <h5 class="fw-bold mt-2">Casal ursinho</h5>
+                                        <p class="mb-5 letras">
+                                            Casal de ursinhos, vendidos juntos ou separadamente  
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Amigurumi/Amigurumi_2.jpeg" alt="Vagalume Glow">
+                                        <h5 class="fw-bold mt-2 ">Vagalume Glow</h5>
+                                        <p class="letras">
+                                            Vagalume que brilha no escuro
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Amigurumi/Amigurumi_3.jpeg" alt="Dino Glow">
+                                        <h5 class="fw-bold mt-2">Dino Glow</h5>
+                                        <p class="letras">
+                                            Dinossauro que brilha no escuro
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Amigurumi/Amigurumi_4.jpeg" alt="Coelhinha">
+                                        <h5 class="fw-bold mt-2">Coelhinha</h5>
+                                        <p class="letras">
+                                            Coelhinha delicada com lacinho
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Amigurumi/Amigurumi_5.jpeg" alt="poodle">
+                                        <h5 class="fw-bold mt-2">Poodle</h5>
+                                        <p class="letras mb-5">
+                                            Cachorrinho Poodle deitado
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Amigurumi/Amigurumi_6.jpeg" alt="Chaveiro de corujas">
+                                        <h5 class="fw-bold mt-2">Chaveiro de corujas</h5>
+                                        <p class="letras">
+                                            Chaveiro de coruja, diversas cores
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Amigurumi/Amigurumi_7.jpeg" alt="Ursinha">
+                                        <h5 class="fw-bold mt-2">Ursinha</h5>
+                                        <p class="letras">
+                                            mini ursinha de touca rosa
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Amigurumi/Amigurumi_8.jpeg" alt="Homer simpson">
+                                        <h5 class="fw-bold mt-2">Homer simpson</h5>
+                                        <p class="letras">
+                                            Homer Simpson com Dounuts
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Amigurumi/Amigurumi_9.jpeg" alt="Porquinho">
+                                        <h5 class="fw-bold mt-2">Porquinho</h5>
+                                        <p class="letras">
+                                            Porquinho rosa com laço
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Amigurumi/Amigurumi_10.jpeg" alt="Amigurumi Profissões">
+                                        <h5 class="fw-bold mt-2">Amigurumi Profissões</h5>
+                                        <p class="letras mb-5">
+                                            Amigurumi personalizado Médica Veterinária. Acompanha jaleco, pijama cirúrgico, máscara e estetoscópio
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Amigurumi/Amigurumi_11.jpeg" alt="Cachorrinhos">
+                                        <h5 class="fw-bold mt-2">Cachorrinhos</h5>
+                                        <p class="letras">
+                                            Cachorrinhos diversos tamanhos personalizados
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/Amigurumi/Amigurumi_12.jpeg" alt="Cachorrinhos">
+                                        <h5 class="fw-bold mt-2">Cachorrinhos</h5>
+                                        <p class="letras">
+                                            Cachorrinhos diversos tamanhos personalizados
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="conjunto">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/conjuto/jogo_de_banheiro.jpeg" alt="Coruja Vermelha">
+                                        <h5 class="fw-bold mt-2">Coruja Vermelha</h5>
+                                        <p class="letras mb-5">
+                                            Conjunto para banheiro Coruja Vermelha, acompanha 5 peças: 2 tapetes de chão, capa para caixa acoplada, capa para tampa e porta papel higiênico
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/conjuto/jogo_de_banheiro_0.jpeg" alt="Coruja Dorminhoca Preto e Branco">
+                                        <h5 class="fw-bold mt-2">Coruja Dorminhoca Preto e Branco</h5>
+                                        <p class="letras mb-5">
+                                            Conjunto para banheiro 4 peças, acompanha 2 tapetes, capa para caixa acoplada e capa para tampa
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/conjuto/jogo_de_banheiro_1.jpeg" alt="Conjunto Rosa Delicado">
+                                        <h5 class="fw-bold mt-2">Conjunto Rosa Delicado</h5>
+                                        <p class="letras">
+                                            Conjunto para banheiro delicado rosa e branco com flores acompanha 2 tapetes, capa para tampa e porta papel higiênico
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/conjuto/jogo_de_banheiro_2.jpeg" alt="Porta papel higiênico corujas">
+                                        <h5 class="fw-bold mt-2">Porta papel higiênico corujas</h5>
+                                        <p class="letras">
+                                            Porta papel higiênico corujas, diversas cores  
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 mb-5">
+                                        <img class="d-block w-100 rounded" src="./imagens/conjuto/jogo_de_banheiro_3.jpeg" alt="Jogo de banheiro rosa e preto">
+                                        <h5 class="fw-bold mt-2">Jogo de banheiro rosa e vinho</h5>
+                                        <p class="pb-4 letras">
+                                            Jogo de banheiro Rosa e Vinho com flores, acompanha 2 tapetes e capa para tampa
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/conjuto/jogo_de_banheiro_4.jpeg" alt="Conjunto Banheiro Flores Vermelhas">
+                                        <h5 class="fw-bold mt-2">Conjunto Banheiro Flores Vermelhas</h5>
+                                        <p class="letras">
+                                            Conjunto para banheiro felpudo cru com flores vermelhas
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/conjuto/jogo_de_cozinha_1.jpeg" alt="Conjunto para cozinha Minnie e Mickey Mouse">
+                                        <h5 class="fw-bold mt-2">Conjunto para cozinha Minnie e Mickey Mouse</h5>
+                                        <p class="letras">
+                                            Conjunto para cozinha Minnie e Mickey 3 peças, com passadeira e 2 tapetes redondos
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/conjuto/jogo_de_cozinha_2.jpeg" alt="Conjunto corujas em espiral">
+                                        <h5 class="fw-bold mt-2">Conjunto corujas em espiral</h5>
+                                        <p class="letras">
+                                            Conjunto corujas preto e branco, acompanha passadeira em espiral e 2 tapetes
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 mb-5">
+                                        <img class="d-block w-100 rounded" src="./imagens/conjuto/jogo_de_cozinha_3.jpeg" alt="Conjunto Cozinha Vermelho">
+                                        <h5 class="fw-bold mt-2">Conjunto Cozinha Vermelho</h5>
+                                        <p class="letras">
+                                            Conjunto para cozinha flores vermelhas, com tapete e capa para gás
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="./imagens/conjuto/jogo_de_cozinha_4.jpeg" alt="Conjunto Cinza">
+                                        <h5 class="fw-bold mt-2">Conjunto Cinza</h5>
+                                        <p class="letras">
+                                            Conjunto simples cinza e preto com aplique de flores, acompanha passadeira e tapete retangular
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section >
+        <section id="contato">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center pt-5 pb-3 text-colorad-2">Fale conosco</h2>
+                </div>
+                <div class="col-md-12 text-center text-colorad-2">
+                    <div class="row">
+                        <h3>
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            Redes sociais</h3>
+                        <ul class="social-links">
+                            <li class="fs-5 ms-1 me-5">
+                                <a href="https://instagram.com/glauciacroche?igshid=YmMyMTA2M2Y=" class="link-colorad">
+                                    <i class="bi bi-instagram fs-2"></i>
+                                </a>
+                            </li>
+                            <li class="fs-5 ms-1">
+                                <a href="https://wa.me/5511950731133?text=Ol%C3%A1%20gostaria%20de%20fazer%20um%20or%C3%A7amento" class="link-colorad">
+                                    <i class="bi bi-whatsapp fs-2 "></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="qr col-md-3 me-5">
+                            <img src="./imagens/contato/QR_code_instagram.png" class=" d-block w-100">
+                        </div>
+                        <div class="col-md-3 me-5">
+                            <img src="./imagens/contato/QR_code_whatsapp.png" class=" d-block w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="navbar navbar-expand-lg p-3">
+        <div class="container">
+            <nav class="navbar-collapse  justify-content-center">
+                <ul class="nav nav-pills d-block d-md-flex">
+                   <li class="nav-item">
+                       <a href="https://github.com/RicardoRosendo98" class="nav-link footer-li"> Desenvolvido por Ricardo Rosendo 
+                           <i class="bi bi-github fs-3"></i> 
+                       </a>
+                   </li>
+                </ul>
+               </nav>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

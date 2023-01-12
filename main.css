@@ -1,0 +1,125 @@
+*{
+    font-family: 'Roboto', san-serif;
+}
+
+.navbar {
+    background-color: #000;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #000;
+}
+
+.navbar-toggler {
+    background-color: rgb(100, 100, 99);
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: #fff;
+}
+
+.nav-croche .nav-link.active {
+    background-color: #000;
+    color: #fff;
+}
+
+#inicio {
+    background-color: #f0dbf0;
+}
+
+#produtos {
+    background-color: #f0e5db;
+    
+}
+
+#contato {
+    background-color: rgb(207, 238, 236);
+    
+}
+
+.carousel-item img {
+   width: 30%;
+}
+
+.letra {
+    font-family: 'Italianno', cursive;
+    color: #fff;
+}
+
+.letras {
+    font-family: 'Comfortaa', cursive;
+}
+
+.letral {
+    color: #000;
+}
+
+.letral:hover {
+    color: #000;
+}
+
+.text-colorad-0 {
+    color: rgb(167, 30, 110);
+}
+
+.text-colorad-1 {
+    color: #bd681a;
+}
+
+.text-colorad-2 {
+    color: rgb(15, 206, 193);
+}
+
+.link-colorad {
+    color: rgb(105, 0, 126);
+    transition: .5s;
+}
+
+.link-colorad:hover {
+    color: rgb(235, 145, 145);
+}
+
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+header{
+    background-color: #fff;
+    color: #FFF;
+}
+
+.qr{
+   margin-left: 310px;
+   margin-bottom: 10px;
+}
+
+.footer-li{
+    color: #f0dbf0;
+}
+
+.footer-li:hover{
+    color: #f0dbf0;
+}
+
+@media (max-width: 767px) {
+    .qr{
+        margin-left: 0;
+    }
+    
+    .link-colorad {
+        color: #000;
+    }
+
+    footer{
+        padding: 0;
+    }
+}
